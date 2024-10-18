@@ -1,0 +1,226 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #ffe4c4;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.header {
+    background-color: #333;
+    color: #f0f0f0;
+}
+
+.header h1 {
+    text-align: center;
+    font-family: "Anton SC", serif;
+    font-size: 40px;
+    padding: 20px 0;
+}
+
+.header ul {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.header ul li {
+    list-style: none;
+    padding: 0 20px;
+}
+
+.header ul li a {
+    color: #f0f0f0;
+    text-decoration: none;
+}
+
+.header ul li a:hover {
+    transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    color: #ffe4c4;
+    font-size: 1.3em;
+    text-decoration: underline;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    margin: 20px;
+}
+
+main img {
+    max-width: 600px;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+main h2, p {
+    text-align: justify;
+    width: 70vw;
+    padding: 15px 0;
+}
+
+main h2 {
+    font-size: 1.4em;
+}
+
+.content {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 70vw;
+}
+
+.container {
+    padding: 40px;
+    margin: 20px;
+    height: 110vh;
+}
+
+.box {
+    padding: 20px;
+    margin: 10px;
+    text-align: justify;
+}
+
+.parallax {
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: -2px -2px 6px black;
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax1 {
+    background-image: url(https://cdn.pixabay.com/photo/2017/05/15/11/53/tomatoes-2314638_1280.jpg);
+}
+
+.parallax2 {
+    background-image: url(https://cdn.pixabay.com/photo/2021/08/19/12/50/dish-6557987_1280.jpg);
+}
+
+.parallax3 {
+    background-image: url(https://brastempexperience.s3.us-west-2.amazonaws.com/wp-content/uploads/2021/07/20210726152252-blog_ratatouille_header.png);
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #333;
+    color: #f0f0f0;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer {
+    text-align: center;
+}
+
+@media (max-width: 480px){
+
+    main {
+        padding: 10px;
+        margin: 5px;
+    }
+
+    main h2, p {
+        padding: 10px;
+    }
+
+    .container {
+        height: auto;
+    }
+
+    .parallax {
+        padding: 10px;
+        height: 80vh;
+    }
+
+    .container {
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .content {
+        width: 90vw;
+    }
+
+    .content ul li{
+        margin-bottom: 10px;
+    }
+
+    .box {
+        padding: 5px;
+        margin: 0;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 768px){
+
+    main {
+        padding: 10px;
+        margin: 5px;
+    }
+
+    main img {
+        margin: 10px;
+        width: 95%;
+    }
+
+    main h2, p {
+        padding: 10px;
+    }
+
+    .container {
+        height: auto;
+    }
+
+    .parallax {
+        padding: 10px;
+        height: 80vh;
+    }
+
+    .container {
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .content {
+        width: 90vw;
+    }
+
+    .box {
+        padding: 5px;
+        margin: 0;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 10px;
+    }
+}
